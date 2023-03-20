@@ -1,0 +1,186 @@
+/* color fondo: #f3f3f3
+   color barra blanca: #f9f9f9
+   color barra negra: #272727 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;1,700&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/homer-simpson-revised?styles=83569');
+
+@keyframes zoom_fade{
+    0%{
+        box-sizing:content-box;
+        font-size: medium;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        vertical-align: bottom;
+    }
+    100%{
+        font-size: 1000%;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+    }
+}
+/* @keyframes esquivar {
+    0%{ transform: translateX(0px);
+    transform: translateY(0px);
+    }
+    100%{ transform: translateX(-50px);
+        transform: translateY(50px);
+        }
+} */
+
+
+
+                
+
+/* el * es un selector universal par aplicar al todo el contenido */
+*{
+    padding : 0px;
+    box-sizing: border-box;
+    margin: 5px 5px;
+    font-family: 'Homer Simpson Revised', sans-serif; }
+
+body{
+    background-image: url(../img/fondo\ nubes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 5vh 3vw;
+}
+
+nav{
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* gap: 5vw; *//* propiedad de FLEXBOX, separacion de las etiquetas dentro del nav */
+}  
+.cuerpo{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+} 
+.bottom {
+    height: 30%;
+    margin: 10% 0;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+
+.SofaSimpsons{   
+    aspect-ratio: 16/11;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.botonBroma{
+   
+    font-size: 50px;
+    padding: 2%;
+    border-radius: 20px;
+    border-color: currentColor;
+    outline: none;
+    box-shadow: 3px 3px 7px rgb(91, 85, 85);
+    width: 220px;
+    height: 150px;
+    position: relative;
+    background-image: url(../img/krusty.PNG);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+/* .boton_broma :hover ::after{
+    animation-name: esquivar;
+    animation-duration: 0.3s;
+} */
+
+
+div h2{
+    width: 100%;
+    height: 10rem;
+}
+/* letra titulo */
+.titulo_portada{                                                                 
+    font-size: 10em;
+    font-weight: normal;
+    text-shadow: 7px 7px 10px rgb(91, 85, 85);
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 225, 73);
+    animation-name: zoom_fade;
+    animation-duration: 3s;
+}
+/* letra titulo */
+h2{                                                                 
+    font-size: 10em;
+    font-weight: normal;
+    text-shadow: 7px 7px 10px rgb(91, 85, 85);
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 225, 73);
+
+}
+/* letra titulo Formulario */
+h3{                                                             
+    font-size: 2rem;
+    font-weight: normal;
+    text-shadow: 7px 7px 10px rgb(91, 85, 85);
+    color:rgb(255, 225, 73);
+}
+/*header blanco letras vinculos*/
+.caja_blanca a{
+
+    font-size: 1.7rem;
+    color:#272727;
+    font-weight: 300;
+    text-decoration: none;
+}
+/*header negro letras vinculos*/
+.caja_negra a{
+
+    font-size: 1.7rem;
+    color:#f9f9f9;
+    font-weight: 300;
+    text-decoration: none;
+}
+/* letra sugerencias */
+h4{
+
+    font-size: small;
+    color:#272727;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+
+a :hover::before{
+    transform: rotate(360deg);
+    transition: 1s ease;
+}
+nav :hover{
+    color: rgb(255, 225, 73);
+    font-weight: normal;
+} 
+
+
+.caja_blanca{
+
+    height: fit-content;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #272727;  
+}
+.caja_negra{
+
+    background-color: #272727;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #f9f9f9;
+}
+
+
